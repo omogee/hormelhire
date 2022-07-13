@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{font-family: 'Open Sans', sans-serif;}
+.uppercase{
+  text-transform: uppercase;
 }
+.sectOne_maindiv{height:200vh;}
+.sectOne_divmainOne{width:60%}
+.sectOne_divmainTwo{width:40%}
+.sectOne_div{padding:30px;margin-top: 20vh}
+.sectOne_textheader{font-size:50px;font-weight: bolder;color:white}
+.sectOne_text{color:grey;text-transform: capitalize;font-size: 25px;}
+.sectOne_btndiv{padding:20px;margin-left: 30px;}
+.getstartedbtn{width:40%}
+.chatbtn{width:40%}
+.sectOne_btn{background-color: blue;font-weight: bolder;border-radius: 15px;width:100%;padding:25px;color:white;font-size: 17px;text-transform: uppercase;border: none;}
+.sectOne_btn2{background-color: indianred;font-weight: bolder;border-radius: 10px;width:100%;padding:25px;color:white;font-size: 17px;text-transform: uppercase;border: none;}
+.reviewdiv_maindiv{width:80%;top:160vh;background-color:white;box-shadow:2px 2px 3px 3px lightgrey;position:absolute;z-index:10;left:10%;}
+.reviewdiv_header{font-weight: bolder;padding:20px;text-align: center;color:rgb(0, 34, 102)}
+.about_header{color:orange;font-weight:bolder;font-size:20px;text-transform: capitalize;}
+.about_text{font-size: 15px;}
+.aboutOdd_div{width:30%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:2px 2px 5px 3px lightgrey}
+.aboutEven_div{width:30%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:2px 2px 5px 3px lightgrey;margin-top: 40%}
+.sectThree_textheader{font-size:50px;color:white;text-transform:capitalize}
+.sectFour_textHeader{font-size:30px;color:rgb(0, 34, 102);text-transform:capitalize}
+.sectFour_base{display:flex;flex-wrap:wrap;padding:10px 30px;margin:0px}
+.sectFour_basediv{width:20%}
+.sectFour_basediv_2{width:20%}
+.section2_maindiv{background-color:rgba(242,242,242);padding:30px;margin-top:100vh}
+.sectFive_div{width:45%;margin-top:50px;padding:10px}
+.sectFive_maindiv{display:flex;flex-wrap:wrap;justify-content:center;padding:30px}
+.sectSix_div{width:43%;margin-top:50px;padding:40px}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.registerdummydiv{width:30%}
+.registerdiv{width:40%;height:85vh;overflow:scroll;border-radius:20px;border:5px solid indianred;background-color:rgba(252,252,252)}
+.registerbox{box-shadow: 6px 2px 8px 4px lightgrey;width:100%;padding:0;margin:0}
+.registerbg{background-color: rgb(0, 34, 102);}
+@media all and (max-width:1200px){
+ 
+}
+@media all and (max-width:992px){
+  
+}
+@media all and (max-width:768px){
+  
+}
+@media all and (max-width:668px){
+  .sectOne_maindiv{height:300vh;}
+}
+@media all and (max-width:568px){
+  .sectOne_maindiv{height:290vh;}
+  .reviewdiv_maindiv{width:100%;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+  .section2_maindiv{background-color:rgba(242,242,242);padding:10px;margin-top:90vh}
+  .sectOne_divmainOne{width:100%}
+  .sectOne_btndiv{padding:0px;margin-left: 0px;}
+  .getstartedbtn{width:50%}
+  .chatbtn{width:50%}
+  .sectOne_btn{background-color: blue;font-weight: bolder;border-radius: 15px;width:100%;padding:15px;color:white;font-size: 15px;text-transform: uppercase;border: none;}
+.sectOne_btn2{background-color: indianred;font-weight: bolder;border-radius: 10px;width:100%;padding:10px;color:white;font-size: 15px;text-transform: uppercase;border: none;}
+  .sectOne_divmainTwo{width:100%}
+  .sectFour_base{display:flex;flex-wrap:wrap;padding:10px ;margin:0px}
+  .sectFour_basediv{width:50%}
+  .sectFour_basediv_2{width:100%}
+  .getstartedbtn{width:100%;padding:10px}
+.chatbtn{width:100%;padding:10px}
+.aboutOdd_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none}
+.aboutEven_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none;margin-top:20px}
+.sectFive_div{width:100%;margin-top:50px;padding:10px}
+.sectFive_maindiv{display:flex;flex-wrap:wrap;justify-content:center;padding:0px}
+.sectSix_div{width:100%;margin-top:10px;padding:0px}
+
+.logindummydiv{display: none;}
+.logindiv{width:100%;padding:0;margin-top:100px;padding:20px}
+.loginbox{box-shadow: none;width:100%;padding:0;margin:0}
+
+.registerdummydiv{display: none;}
+.registerdiv{width:100%;height:85vh;overflow:scroll;border:none;background-color:rgba(252,252,252);margin-top:20px;padding:20px}
+.registerbox{box-shadow: none;width:100%;padding:0;margin:0}
+.registerbg{background-color:white;}
 }
