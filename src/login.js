@@ -4,21 +4,17 @@ import "./index.css"
 function Login() {
     return ( 
         <div className="container">
-             <div style={{height:"500px",backgroundRepeat:"no-repeat",backgroundPosition:"center bottom",filter:"blur(5px)",backgroundImage:"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU)"}}></div>
+             <div style={{height:"500px",backgroundRepeat:"no-repeat",backgroundPosition:"center ",filter:"blur(5px)",backgroundImage:"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU)"}}></div>
         <div style={{position:"absolute",width:"100%",top:"0px"}}>
         <div style={{display:"flex"}}>
         <div  className='logindummydiv'></div>
          <div className='logindiv'>
-         <div style={{marginTop:"20px"}}>
-                <center>
-                   <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU`}  style={{width:"20%"}} /> 
-                   </center>
-              </div>
+       
              
               <div className='loginbox' >
             <div>
                 <center>
-                    <h2 style={{padding:"25px",fontWeight:"bolder",fontSize:"20px"}}>Sign in to Hormel Hire</h2>
+                    <h2 style={{fontWeight:"bolder",fontSize:"20px"}}>Sign in to Hormel Hire</h2>
                 </center>
             </div>
             <div style={{backgroundColor:"white",border:"1px solid lightgrey"}}>

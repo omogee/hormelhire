@@ -4,7 +4,8 @@
 }
 .sectOne_maindiv{height:200vh;}
 .sectOne_divmainOne{width:60%}
-.sectOne_divmainTwo{width:40%}
+.sectOne_divmainTwo{height:100vh;width:40%;background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url('https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png')}
+
 .sectOne_div{padding:30px;margin-top: 20vh}
 .sectOne_textheader{font-size:50px;font-weight: bolder;color:white}
 .sectOne_text{color:grey;text-transform: capitalize;font-size: 25px;}
@@ -15,6 +16,7 @@
 .sectOne_btn2{background-color: indianred;font-weight: bolder;border-radius: 10px;width:100%;padding:25px;color:white;font-size: 17px;text-transform: uppercase;border: none;}
 .reviewdiv_maindiv{width:80%;top:160vh;background-color:white;box-shadow:2px 2px 3px 3px lightgrey;position:absolute;z-index:10;left:10%;}
 .reviewdiv_header{font-weight: bolder;padding:20px;text-align: center;color:rgb(0, 34, 102)}
+.reviewdiv_One{width:20%;padding:0;text-align:center;margin:0}
 .about_header{color:orange;font-weight:bolder;font-size:20px;text-transform: capitalize;}
 .about_text{font-size: 15px;}
 .aboutOdd_div{width:30%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:2px 2px 5px 3px lightgrey}
@@ -29,10 +31,17 @@
 .sectFive_maindiv{display:flex;flex-wrap:wrap;justify-content:center;padding:30px}
 .sectSix_div{width:43%;margin-top:50px;padding:40px}
 
+.logindummydiv{width:30%;}
+.logindiv{width:40%;padding:0;margin-top:100px;padding:20px}
+.loginbox{box-shadow: none;width:100%;padding:0;margin:0}
+
+
 .registerdummydiv{width:30%}
-.registerdiv{width:40%;height:85vh;overflow:scroll;border-radius:20px;border:5px solid indianred;background-color:rgba(252,252,252)}
+.registerdiv{width:40%;overflow:scroll;border-radius:20px;border:5px solid indianred;background-color:rgba(252,252,252)}
 .registerbox{box-shadow: 6px 2px 8px 4px lightgrey;width:100%;padding:0;margin:0}
 .registerbg{background-color: rgb(0, 34, 102);}
+.div_sm{display:none}
+.div_lg{display:block}
 @media all and (max-width:1200px){
  
 }
@@ -44,18 +53,60 @@
 }
 @media all and (max-width:668px){
   .sectOne_maindiv{height:300vh;}
+  .div_sm{display:block}
+  .div_lg{display:none}
+  .reviewdiv_maindiv{width:100%;box-shadow:none;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+
 }
 @media all and (max-width:568px){
+  .div_sm{display:block}
+  .div_lg{display:none}
   .sectOne_maindiv{height:290vh;}
-  .reviewdiv_maindiv{width:100%;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+  .sectOne_div{padding:10px;margin-top: 20vh}
+  .reviewdiv_maindiv{width:100%;box-shadow:none;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+ 
   .section2_maindiv{background-color:rgba(242,242,242);padding:10px;margin-top:90vh}
   .sectOne_divmainOne{width:100%}
   .sectOne_btndiv{padding:0px;margin-left: 0px;}
+  .sectOne_divmainTwo{height:100vh;width:100%;background-size:contain;background-repeat:no-repeat;background-position:right top;background-image:url('https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png')}
   .getstartedbtn{width:50%}
   .chatbtn{width:50%}
   .sectOne_btn{background-color: blue;font-weight: bolder;border-radius: 15px;width:100%;padding:15px;color:white;font-size: 15px;text-transform: uppercase;border: none;}
 .sectOne_btn2{background-color: indianred;font-weight: bolder;border-radius: 10px;width:100%;padding:10px;color:white;font-size: 15px;text-transform: uppercase;border: none;}
   .sectOne_divmainTwo{width:100%}
+  .sectFour_base{display:flex;flex-wrap:wrap;padding:10px ;margin:0px}
+  .sectFour_basediv{width:50%}
+  .sectFour_basediv_2{width:100%}
+  .getstartedbtn{width:100%;padding:10px}
+.chatbtn{width:100%;padding:10px}
+.aboutOdd_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none}
+.aboutEven_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none;margin-top:20px}
+.sectFive_div{width:100%;margin-top:50px;padding:10px}
+.sectFive_maindiv{display:flex;flex-wrap:wrap;justify-content:center;padding:0px}
+.sectSix_div{width:100%;margin-top:10px;padding:0px}
+
+.logindummydiv{display: none;}
+.logindiv{width:100%;padding:0;margin-top:100px;padding:20px}
+.loginbox{box-shadow: none;width:100%;padding:0;margin:0}
+
+.registerdummydiv{display: none;}
+.registerdiv{width:100%;height:85vh;overflow:scroll;border:none;background-color:rgba(252,252,252);margin-top:20px;padding:20px}
+.registerbox{box-shadow: none;width:100%;padding:0;margin:0}
+.registerbg{background-color:white;}
+}
+@media all and (max-width:468px){
+  .sectOne_maindiv{height:290vh;}
+  .sectOne_div{padding:10px;margin-top: 20vh}
+  .reviewdiv_maindiv{width:100%;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+  .section2_maindiv{background-color:rgba(242,242,242);padding:10px;margin-top:13ß0vh}
+  .sectOne_divmainOne{width:100%}
+  .sectOne_btndiv{padding:0px;margin-left: 0px;}
+  .sectOne_divmainTwo{height:100vh;width:100%;background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url('https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png')}
+  .getstartedbtn{width:50%}
+  .chatbtn{width:50%}
+  .sectOne_btn{background-color: blue;font-weight: bolder;border-radius: 15px;width:100%;padding:15px;color:white;font-size: 15px;text-transform: uppercase;border: none;}
+.sectOne_btn2{background-color: indianred;font-weight: bolder;border-radius: 10px;width:100%;padding:10px;color:white;font-size: 15px;text-transform: uppercase;border: none;}
+
   .sectFour_base{display:flex;flex-wrap:wrap;padding:10px ;margin:0px}
   .sectFour_basediv{width:50%}
   .sectFour_basediv_2{width:100%}

@@ -23,7 +23,7 @@ function Landing() {
     return ( 
         <div>
           <div className='sectOne_maindiv' style={{backgroundColor:colours[currentIndex]}}>
-             <div style={{display:"flex"}}>
+             <div style={{display:"flex",flexWrap:"wrap",width:"100%"}}>
                 <div className='sectOne_divmainOne'>
                   <div className='sectOne_div'>
                   <span className='sectOne_textheader uppercase'>
@@ -61,21 +61,52 @@ function Landing() {
                    </div>
                   </div>
                 </div>
-                <div style={{height:"100vh",width:"40%",backgroundSize:"contain",backgroundRepeat:"no-repeat",backgroundPosition:"right bottom",backgroundImage:`url(https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png)`}}>
+                <div className='sectOne_divmainTwo'>
                    
                 </div>
              </div>
              </div>
-             <div className='reviewdiv_maindiv'>
+             <div className='reviewdiv_maindiv div_sm'>
              <div className="reviewdiv_header">
                 <span style={{fontSize:"40px",padding:"0",margin:"0"}}>Reviews <span className='fa fa-star' style={{color:"orange",fontSize:"20px",padding:"5px",border:"1px solid lightgrey"}}></span></span>
                 <p style={{padding:"0",margin:"0"}}>Check Out Some Of Our Latest Reviews</p>
              </div>
              <div className="reviewdiv" style={{padding:"20px"}}>
             {reviews.map((review,index) =>
+             <div key={index} style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",padding:"10px"}}>
+             <div className='reviewdiv_One' style={{width:"10%"}}>
+             <img style={{width:"100%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./profileimage1.jpeg`)} />
+             </div>
+             <div style={{width:"85%"}}>
+             <small style={{padding:"0",margin:"0",fontWeight:"bolder"}} > NAME: {getUnicodeFlagIcon(`${review.code}`)} {review.name}</small><br/>
+             <small style={{padding:"0",margin:"0",fontWeight:"bolder"}} > Client: {getUnicodeFlagIcon(`${review.code}`)} {"Eze Ikechukwu"} <small>@delaventures</small></small><br/>
+             <small style={{padding:"0",margin:"0",fontWeight:"bolder"}} > Skill:  {"Software Developer"} </small><br/>
+             <small><span style={{fontWeight:"bold"}}>Comment : </span> very trusted dealer but fewer options but cool services </small><br/>
+             <small style={{padding:"0",margin:"0",display:"inline"}} > <small>
+                <div style={{position:"relative",width:"50%",fontSize:"18px"}}>
+              <div>
+                 <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>
+              </div>
+              <div style={{position:"absolute",top:"0px",color:"orange",overflow:"hidden"}}>
+                 <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>  
+              </div>
+              
+            </div>
+            </small></small>
+
+
+
+            </div>
+         </div>
+         )}
+          </div>
+         </div>
+             <div className='reviewdiv_maindiv div_lg'>
+               <div className="reviewdiv" style={{padding:"20px"}}>
+            {reviews.map((review,index) =>
              <div key={index} style={{display:"flex",padding:"10px"}}>
-             <div style={{width:"20%",padding:"0",textAlign:"center",margin:"0"}}>
-             <img style={{width:"80%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./profileimage1.jpeg`)} />
+             <div className='reviewdiv_One'>
+             <img style={{width:"50%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./profileimage1.jpeg`)} />
                  <p > {getUnicodeFlagIcon(`${review.code}`)} {review.name}</p>
              </div>
              <div style={{width:"55%"}}>
