@@ -26,7 +26,7 @@ function Landing() {
              <div style={{display:"flex",flexWrap:"wrap",width:"100%"}}>
                 <div className='sectOne_divmainOne'>
                   <div className='sectOne_div'>
-                  <span className='sectOne_textheader uppercase'>
+                  <span className='sectOne_textheader uppercase' >
                     Connect to our top-notch labour at your convenience
                    </span>
                    <p className='sectOne_text'>
@@ -170,18 +170,17 @@ function Landing() {
                 </div>
               </div>
               <div style={{ backgroundColor:"rgb(0, 34, 102)",borderRadius:"50px",marginTop:"30px"}}>
-                <div style={{display:"flex"}}>
+                <div style={{display:"flex",position:"relative"}}>
                     <div style={{width:"60%",padding:"30px"}}>
                         <span className='sectThree_textheader'>
                             make your skill visible to  over 5 million potential clients in One Click ...
                         </span>
                     </div>
-                  <div style={{display:"flex",width:"40%",backgroundImage:`url(https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png)`,backgroundRepeat:"no-repeat",backgroundSize:"contain",backgroundPosition:"right bottom"}}>
-                  <div style={{width:"20%",padding:"10px"}}>
-                       <img  src={`https://assets-global.website-files.com/601cea0056c5710021a1f03c/623bf59c5aae698983d739a2_Multi-CountryPayroll_HighPerformer_HighPerformer.svg`} />
-                    </div>
-                    <div style={{width:"20%",padding:"10px"}}>
+                  <div style={{display:"flex",width:"40%",overflow:"hidden",backgroundImage:`url(https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png)`,backgroundRepeat:"no-repeat",backgroundSize:"contain",backgroundPosition:"right bottom"}}>
+                    <div style={{padding:"10px"}}>
                        <img src={`https://assets-global.website-files.com/601cea0056c5710021a1f03c/623bf5a7043d8919bbeda935_Multi-CountryPayroll_BestSupport_QualityOfSupport.svg`} />
+                   
+                       <img  src={`https://assets-global.website-files.com/601cea0056c5710021a1f03c/623bf59c5aae698983d739a2_Multi-CountryPayroll_HighPerformer_HighPerformer.svg`} />
                     </div>
                   </div>
                 </div>
@@ -210,9 +209,10 @@ function Landing() {
                       Sit back and enjoy your confort <br/> <span style={{fontSize:"50px"}}> &#128523;</span>
                         </p>
                  </div>
-                 <div className='sectFive_div' style={{display:"flex",justifyContent:"space-between",alignItems: "flex-start"}}>
-                   <div style={{width:"33%",padding:"5px",boxShadow:"2px 2px 5px 3px lightgrey",borderRadius:"10px",backgroundColor:"white",marginTop:"20vh"}}>
-                   <center>
+                 <div className='sectFive_div' style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems: "flex-start"}}>
+                 <center className="sectFive_divcenter">
+                   <div className='sectFive_divOne'>
+                 
                     <div>
                         <img style={{width:"80%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./profileimage1.jpeg`)} />
                         <small style={{fontWeight:"bolder",float:"left",color:"grey"}}>France</small><br/><br/>
@@ -225,12 +225,15 @@ function Landing() {
                            View Profile
                             </button>
                     </div>
-                   </center>
+                   
                    </div>
-                   <div style={{width:"30%",padding:"5px",boxShadow:"2px 2px 5px 3px lightgrey",borderRadius:"10px",backgroundColor:"white"}}>
-                   <center>
+                   </center>
+                   <br/>
+                   <center className="sectFive_divcenter">
+                   <div className='sectFive_divTwo'>
+                   
                    <div>
-                        <img style={{width:"80%",borderRadius:"50%",height:"150px",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./plumber.jpeg`)} />
+                        <img style={{width:"80%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./plumber.jpeg`)} />
                         <small style={{fontWeight:"bolder",float:"left",color:"grey"}}>United States</small><br/><br/>
                         <p>Richard Cypher</p>
                         <p style={{padding:"0",margin:"0"}}>{getUnicodeFlagIcon("us")} Plumber</p>
@@ -241,12 +244,14 @@ function Landing() {
                            View Profile
                             </button>
                     </div>
-                   </center>
+                   
                   </div>
-                  <div style={{width:"30%",padding:"5px",boxShadow:"2px 2px 5px 3px lightgrey",borderRadius:"10px",backgroundColor:"white",marginTop:"20vh"}}>
-                  <center>
+                  </center>
+                  <br/>
+                  <center className="sectFive_divcenter">
+                  <div className='sectFive_divOne'>
                   <div>
-                        <img style={{width:"80%",borderRadius:"50%",height:"150px",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./mechanic.jpeg`)} />
+                        <img style={{width:"80%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./mechanic.jpeg`)} />
                         <small style={{fontWeight:"bolder",float:"left",color:"grey"}}>Nigeria</small><br/><br/>
                         <p>Oluebube Christine</p>
                         <p style={{padding:"0",margin:"0"}}>{getUnicodeFlagIcon("ng")} Car Technician</p>
@@ -257,8 +262,8 @@ function Landing() {
                            View Profile
                             </button>
                     </div>
-                   </center>
-                   </div>
+   
+                   </div>                </center>
                  </div>
               </div>
               <div style={{borderRadius:"50px",width:"100%",backgroundColor:"pink"}}>

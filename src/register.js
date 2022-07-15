@@ -64,7 +64,7 @@ function Register() {
                <span style={{color:"grey", fontWeight:"bold"}}><span style={{color:"indianred",fontSize:"20px"}}> * </span> Confirm Password :</span>
                <input type="text" name="confirmpassword" style={{width:"100%",padding:"10px",borderRadius:"20px",border:"1px solid lightgrey"}} /><br/><br/>
 
-               <input type="button" value='Submit' style={{width:"100%",backgroundColor:"indianred",fontSize:"15px",textTransform:"uppercase",color:"white",fontWeight:"bold",padding:"17px",borderRadius:"20px",border:"1px solid lightgrey"}} /><br/><br/>
+               <input type="button" value='Submit' style={{width:"100%",backgroundColor:"indianred",fontSize:"17px",textTransform:"uppercase",color:"white",fontWeight:"bold",padding:"20px",borderRadius:"20px",border:"1px solid lightgrey"}} /><br/><br/>
                </div>
             </div>
             </div>
