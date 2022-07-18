@@ -27,6 +27,7 @@ function Landing() {
                 <div className='sectOne_divmainOne'>
                   <div className='sectOne_div'>
                   <span className='sectOne_textheader uppercase' >
+                    <br/>
                     Connect to our top-notch labour at your convenience
                    </span>
                    <p className='sectOne_text'>
@@ -46,18 +47,16 @@ function Landing() {
                    <img src={`https://assets-global.website-files.com/601cea0056c5710021a1f03c/61ef95694c636d0c5e9fbae5_g2.svg`} /> 
                    </div>
                    <div style={{position:"relative",width:"50%",fontSize:"25px"}}>
-                     <div>
-                        <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>
-                     </div>
-                     <div style={{position:"absolute",top:"0px",color:"orange",width:"10vw",overflow:"hidden"}}>
-                        <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>  
-                     </div>
+                   <div className="outer" >
+                        <div className="inner" style={{width:`${3.7*20}%`}}>
+                         </div>
+                       </div>
                      <div style={{color:"white"}}>
                         <small>We are pleased to inform you that we have a 5 <span className='fa fa-star'></span> rating on G2 <span style={{fontSize:"45px"}}> &#129327;</span></small>
                      </div>
                    </div>
                    <div style={{width:"30%"}}>
-                   <p style={{color:"white"}}><a href="#" style={{color:""}}>Click</a> to See Our Customer Reviews</p>
+                   
                    </div>
                   </div>
                 </div>
@@ -66,79 +65,48 @@ function Landing() {
                 </div>
              </div>
              </div>
-             <div className='reviewdiv_maindiv div_sm'>
-             <div className="reviewdiv_header">
-                <span style={{fontSize:"40px",padding:"0",margin:"0"}}>Reviews <span className='fa fa-star' style={{color:"orange",fontSize:"20px",padding:"5px",border:"1px solid lightgrey"}}></span></span>
-                <p style={{padding:"0",margin:"0"}}>Check Out Some Of Our Latest Reviews</p>
-             </div>
-             <div className="reviewdiv" style={{padding:"20px"}}>
-            {reviews.map((review,index) =>
-             <div key={index} style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",padding:"10px"}}>
-             <div className='reviewdiv_One' style={{width:"10%"}}>
-             <img style={{width:"100%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./profileimage1.jpeg`)} />
-             </div>
-             <div style={{width:"85%"}}>
-             <small style={{padding:"0",margin:"0",fontWeight:"bolder"}} > NAME: {getUnicodeFlagIcon(`${review.code}`)} {review.name}</small><br/>
-             <small style={{padding:"0",margin:"0",fontWeight:"bolder"}} > Client: {getUnicodeFlagIcon(`${review.code}`)} {"Eze Ikechukwu"} <small>@delaventures</small></small><br/>
-             <small style={{padding:"0",margin:"0",fontWeight:"bolder"}} > Skill:  {"Software Developer"} </small><br/>
-             <small><span style={{fontWeight:"bold"}}>Comment : </span> very trusted dealer but fewer options but cool services </small><br/>
-             <small style={{padding:"0",margin:"0",display:"inline"}} > <small>
-                <div style={{position:"relative",width:"50%",fontSize:"18px"}}>
-              <div>
-                 <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>
-              </div>
-              <div style={{position:"absolute",top:"0px",color:"orange",overflow:"hidden"}}>
-                 <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>  
-              </div>
-              
-            </div>
-            </small></small>
-
-
-
-            </div>
-         </div>
-         )}
-          </div>
-         </div>
-             <div className='reviewdiv_maindiv div_lg'>
-               <div className="reviewdiv" style={{padding:"20px"}}>
-            {reviews.map((review,index) =>
-             <div key={index} style={{display:"flex",padding:"10px"}}>
-             <div className='reviewdiv_One'>
-             <img style={{width:"50%",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={require(`./profileimage1.jpeg`)} />
-                 <p > {getUnicodeFlagIcon(`${review.code}`)} {review.name}</p>
-             </div>
-             <div style={{width:"55%"}}>
-             <div style={{position:"relative",width:"50%",fontSize:"18px"}}>
-              <div>
-                 <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>
-              </div>
-              <div style={{position:"absolute",top:"0px",color:"orange",overflow:"hidden"}}>
-                 <span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span><span className='fa fa-star'></span>  
-              </div>
-              <small>{getUnicodeFlagIcon("ng")} Ikechukwu Eze : </small>
-              <small>@dela_ventures <span style={{color:"darkblue"}} className='fa fa-check-circle'></span></small>
-            </div>
-            <p><span style={{fontWeight:"bold"}}>Comment : </span> very trusted dealer but fewer options but cool services </p>
-             </div>
-             <div style={{width:"25%",fontSize:"18px",fontWeight:"bold"}}>
-                <small>1,265 verified Engagements</small><br/>
-                <small>(Software Developer)</small><br/>
-                <b>08-07-22</b>
-             </div>
-         </div>
-         )}
-         
-              
-             </div>
+             <div style={{borderRadius:"50px",width:"100%",backgroundColor:"white"}}>
+             
+             <div style={{display:"flex",flexWrap:"wrap",padding:"20px 30px"}}>
+             <div className='sectSix_div'>
+               <img style={{width:"100%",borderRadius:"20px"}} src={`https://surfshark.com/wp-content/uploads/2021/10/05_Who-is-Tracking-You_Header.3adfdda4.png`} />
+               </div>
+                <div className='sectSix_div'>
+                       <h1 className='sectFour_textHeader'>Track Profile View And View Previous Reviews, Ratings Of Potential Clients</h1>
+                       <p style={{color:"rgb(0, 34, 102)"}}>
+                     Our Team have installed tested and trusted mandated reviews after every engagement which is added to each profile so as to enable you track clients before engagement.<br/>
+                      You can also view profile engagements at the top left corner of your profile page for as low as <span style={{fontSize:"16px",fontWeight:"bold"}}>$0</span>. <br/><br/>
+                      <span style={{fontSize:"16px",fontWeight:"bold"}}> Super cool right !!! </span>
+                       </p>
+                       <button style={{backgroundColor:"indianred",fontWeight:"bold",border:"none",borderRadius:"20px",color:"white",fontSize:"20px",padding:"10px 13px "}}>
+                        <small>LEARN MORE ...</small>
+                      </button>
+                </div>
+                </div>
+                <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center",padding:"20px 30px"}}>
+                <div className='sectSix_div'>
+                       <h1 className='sectFour_textHeader'>Transparent Price System with Absolutely No Sentiments</h1>
+                       <p style={{color:"rgb(0, 34, 102)"}}>
+                     Our Transparent Pricing System would help you bid faster and budget pricisely before engagement.  <br/><br/>
+                       </p>
+                       <button style={{backgroundColor:"indianred",fontWeight:"bold",border:"none",borderRadius:"20px",color:"white",fontSize:"20px",padding:"10px 13px "}}>
+                        <small>LEARN MORE ...</small>
+                      </button>
+                      
+                </div>
+                <div className='sectSix_div'>
+               <img style={{width:"100%",borderRadius:"20px"}} src={`https://thumbs.dreamstime.com/z/transparency-man-working-holographic-interface-visual-screen-high-quality-hologram-transparency-man-working-holographic-99552314.jpg`} />
+               </div>
+                </div>
              </div>
              <div className='section2_maindiv'>
                 <br/>
                 <div style={{display:"flex",justifyContent:"space-around"}}>
-              <div style={{width:"40%",marginTop:"10vh"}}>
+              <div style={{width:"40%",marginTop:"10px"}}>
                 <center>
-                <button className='sectOne_btn'>Why Hormel <span className='fa fa-chevron-down' style={{marginLeft:"5px"}}></span></button>
+                <button style={{backgroundColor:"rgb(0, 34, 102)",fontWeight:"bold",border:"none",borderRadius:"20px",color:"white",fontSize:"20px",padding:"10px 50px"}}>
+                        <small>WHY HORMEL</small>
+                      </button>
                 </center>
                 <br/>
               </div>
@@ -201,6 +169,7 @@ function Landing() {
                     </div>
                 </div>
               </div>
+              <br/>
               <div className='sectFive_maindiv'>
                  <div className='sectFive_div'>
                         <h1 className='sectFour_textHeader'>Hire Cheap expertise around your neighbourhood</h1>
@@ -306,8 +275,44 @@ function Landing() {
                  </div>
 
              </div>
+             <div style={{width:"100%",backgroundColor:"lightblue"}}>
+             <div style={{display:"flex",padding:"50px",justifyContent:"space-evenly"}}>
+              <div style={{width:"30%",textAlign:"center"}}>
+                <span style={{padding:"0",fontSize:"100px",margin:"0"}}>&#x1F31A;</span>
+                <h2 style={{color:"indianred",textTransform:"uppercase",padding:"0",margin:"0"}}>Not Yet Convinced</h2>
+                <p>Find Out more about our convenience and recommendations from our team, a click would convince you to join over 2 million nigerians</p>
+                <button style={{backgroundColor:"indianred",fontWeight:"bold",border:"none",borderRadius:"20px",color:"white",fontSize:"20px",padding:"10px 13px "}}>
+                        <small>CHAT US</small>
+                      </button>
+              </div>
+              <div style={{width:"30%",textAlign:"center"}}>
+                <span style={{padding:"0",fontSize:"100px",margin:"0"}} className="fa fa-sign-in"></span>
+                <h2 style={{color:"indianred",textTransform:"uppercase"}}>Sign up for free</h2>
+                <p>Sign up for a free plan and, as your requirements grow, upgrade to one that best fits your needs.</p>
+                <button style={{backgroundColor:"indianred",fontWeight:"bold",border:"none",borderRadius:"20px",color:"white",fontSize:"18px",padding:"10px 13px "}}>
+                        <small>SIGN UP FOR FREE</small>
+                      </button>
+              </div>
+             </div>
+        </div>
              <div style={{height:"80vh",width:"100%",backgroundColor:"rgb(0, 34, 102)"}}>
-            Hello
+            <div style={{display:"flex"}}>
+              <div style={{width:"15%",backgroundColor:"white",height:"80vh"}}>
+              <img style={{width:"100%",marginTop:"20vh"}} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU`} />
+              </div>
+              <div style={{width:"20%",padding:"20px",fontSize:"14px",color:"lightgrey"}}>
+             <p style={{color:"white"}}>Our Locations <span className='fa fa-globe fa-2x'></span></p>
+               <p>Lagos Island, Lagos State</p>
+               <p>Lagos Mainland, Lagos State</p>
+               <p>Shagamu, Ogun State</p>
+               <p>Rumuomasi, Rivers State</p>
+               <p>Ore, Oyo State</p>
+               <p>Minna, Niger State</p>
+               <p>Abakaliki, Ebonyi State</p>
+               <p>Oba, Anambra State</p>
+               <p>Up Iweka, Anambra State</p>
+               </div>
+            </div>
         </div>
        
         </div>

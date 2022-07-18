@@ -1,32 +1,19 @@
-*{background:transparent}
+*{background:transparent;
+    font-family: 'Open Sans', sans-serif;}
 .navdiv{
     display:flex;
+    flex-wrap: wrap;
     background-color: white;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin:10px 15px
+    justify-content: space-between
 }
-.navlist{
+.navdivlist{
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-.navlist li{
-    display:inline;
-    text-transform: uppercase;
-    width: 25%;
-    justify-content: space-between;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.navlist li:hover{
-    border:1px solid orange;
-    border-bottom: 2px solid orange;
-}
-.navdivlist{text-align:center;margin-top:15px;}
-.nav-btn{
-    margin-top:10px;
-}
+
+.navlistdiv{width:60%;order:2;}
+.nav-btn{order:3}
+
 .second_nav{
     width:100%;
     background-color: orange;
@@ -82,6 +69,7 @@
 .bardiv{display:none}
 .navbrand{width:10%}
 .navdiv_sm{display: none;}
+.navdiv_smbtm{color:rgb(0, 34, 102)}
 .carodiv{width:100%;height:80vh}
 .discountdiv{position:absolute; top:40%;right:10%;padding:20px;width:20%;background-color:rgba(0,0,0,0.6)}
 .section_Two{width:100%;padding: 100px;}
@@ -89,18 +77,29 @@
 .section_3_img{height:700px;padding:20px}
 
 @media all and (max-width:900px) {
+    .navdiv_smbtm{color:white}
+    .bardiv{display:block}
+    .navbrand_sm{width:15%}
+    .navdiv{display: none; }
+    .navlistdiv{width:70%;order:2;}
+    .nav-btn{order:3}
     .navbrand{width:15%}
   .logindiv{left:25%;height:70%;width:50%;border-radius: 10px;top:15%}
   .registerdiv{left:25%;width:50%;border-radius: 10px;top:15%}
   .carodiv{width:100%;height:90vh}
   .discountdiv{position:absolute; top:40%;right:10%;padding:15px;width:30%;background-color:rgba(0,0,0,0.5)}
   .footercontactdiv{position:absolute;background-color:indianred;border:1px solid grey;top:-50px;width:40%;border-radius:50%;height:250px}
+  .navdiv_sm{display:block;position:absolute;width:0px;height:0px;overflow: hidden;text-transform: uppercase;border-right: 2px solid lightgrey;opacity: 0.8;transition-property: "width, height";transition-duration: 1s;transition-timing-function: linear;font-weight: bold;background-color: black;z-index: 10;}
   
 }
 
 @media all and (max-width:600px) {
+    .navbrand_sm{width:25%}
+    .bardiv{display:block}
+    .navdiv{display: none; }
     .navbrand{width:20%}
-   
+    .navlistdiv{width:100%;order:3;}
+        .nav-btn{order:2}
   .logindiv{left:0;width:100%;border-radius: 0px;top:10%}
   .registerdiv{left:0;width:100%;border-radius: 0px;top:10%}
   .carodiv{width:100%;height:100vh}
@@ -108,12 +107,15 @@
   .section_Two{width:100%;padding:50px 20px;} 
   .footercontactdiv{position:absolute;background-color:indianred;border:1px solid grey;top:-50px;width:40%;border-radius:50%;height:250px}
   .section_3_img{height:300px;padding:20px}
+  .navdiv_sm{display:block;position:absolute;width:0px;height:0px;overflow: hidden;text-transform: uppercase;border-right: 2px solid lightgrey;opacity: 0.8;transition-property: "width, height";transition-duration: 1s;transition-timing-function: linear;font-weight: bold;background-color: black;z-index: 10;}
   }
 @media all and (max-width:520px) {
- 
+    .navbrand_sm{width:30%}
+    .navlistdiv{width:100%;order:3;}
+        .nav-btn{order:2}
      a{color:red}
     .bardiv{display:block}
-    .navdivlist{display: none; }
+    .navdiv{display: none; }
     .navdiv_sm{display:block;position:absolute;width:0px;height:0px;overflow: hidden;text-transform: uppercase;border-right: 2px solid lightgrey;opacity: 0.8;transition-property: "width, height";transition-duration: 1s;transition-timing-function: linear;font-weight: bold;background-color: black;z-index: 10;}
   .logindiv{left:0;width:100%;border-radius: 0px;top:10%}
   .registerdiv{left:0;width:100%;border-radius: 0px;top:10%}

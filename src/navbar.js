@@ -5,8 +5,8 @@ import "./s.css"
 
 function Navbar() {
     const [display, changedisplay] = useState("none")
-    const [navlinks, setnavlinks] = useState([{url:"",name:"home"},{url:"services",name: "services"},{url:"contacts",name:"contact"},
-    {url:"login",name:"login/register"}])
+    const [navlinks, setnavlinks] = useState([{url:"",name:"home"},{url:"about us",name: "about us"},{url:"profile",name: "profile"},{url:"contacts",name:"contact"},
+    {url:"services",name:"services"}])
     const [subnavlinks, setsubnavlinks] = useState([{url:"",name:"home"},{url:"services",name: "our services"},{url:"contacts",name:"contact us"},
     {url:"why hormel",name:"why hormel"}, {url:"about",name:"About us"},{url:"profile",name:"my profile"},{url:"meet Our Team",name:"Meet Our team"},{url:"hire",name:"Hire labour"},
     {url:"login",name:"login/register"}])
@@ -29,27 +29,34 @@ function Navbar() {
         nav.style.width = nav.style.height === "100%" ? "0%" : "100%"
         }
     return ( 
-        <div style={{position:"sticky",top:"0px",left:"0px",backgroundColor:"white",width:"100%",margin:"0",padding:"0",zIndex:"1000"}}>
-            <nav >
-                <div className='navdiv navdivlist' style={{zIndex:"15"}}>
+        <div style={{position:"fixed",top:"0px",left:"0px",backgroundColor:"white",width:"100%",margin:"0",padding:"0",zIndex:"1000"}}>
+            <nav style={{padding:"0",margin:"0"}}>
+                <div className='navdiv' style={{zIndex:"15",padding:"0",marginL:"0",width:"100%",justifyContent:"space-evenly"}}>
                   <div className='navbrand' >
-                      <img style={{width:"100%",marginTop:"5px"}} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU`} />
+                      <img style={{width:"100%",marginTop:"10px"}} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU`} />
                   </div>
-                  {navlinks.map((navlink,i) =>               
+                 <div className='navlistdiv' style={{display:"flex",order:"2",justifyContent:"space-evenly",textAlign:"center"}}>
+                 {navlinks.map((navlink,i) =>               
                   <div key={i} className='navdivlist'>
-                <a  style={{textDecoration:"none",textTransform:"uppercase",color:"grey",fontWeight:"bolder"}}  href={`/${navlink.url}`}>{navlink.name}</a>
+                <a  style={{textDecoration:"none",textTransform:"uppercase",color:"black",fontWeight:"bold"}}  href={`/${navlink.url}`}><small>{navlink.name}</small></a>
                 </div>
              )}
-                  <div >
-                      <center style={{padding:"5px"}}>
-                      <button style={{backgroundColor:"indianred",border:"none",borderRadius:"10px",color:"white",padding:"10px"}}>ACCOUNT</button>
+                 </div>
+                  <div className="nav-btn" style={{padding:"0",margin:"0"}}>
+                      <center style={{fontWeight:"bold",marginBottom:"3px",color:"rgb(0, 34, 102)"}}>
+                        <small style={{fontSize:"12px"}}><span style={{fontSize:"18px"}} className='fa fa-globe' ></span> | Support | Documentation | <a href="/login"  style={{color:"rgb(0, 34, 102)",textDecoration:"none"}}>Login</a></small><br/>
+                     <a href="/register" >
+                     <button style={{backgroundColor:"indianred",fontWeight:"bold",border:"none",margin:"0px",borderRadius:"20px",color:"white",fontSize:"15px",padding:"10px 13px "}}>
+                        <small>SIGN UP FOR FREE</small>
+                      </button>
+                     </a>
                       </center>
                   </div>
                 </div>
             </nav>
           
             <div className='bardiv' style={{display:"absolute",top:"5px",width:"100%",height:"8vh",backgroundColor:"white",opacity:"0.9", right:"0px",padding:"10px"}}>
-            <div style={{width:"30%",float:"left"}}>
+            <div className='navbrand_sm' style={{float:"left"}}>
                       <img style={{width:"100%"}} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU`} />
                 </div>
                <div style={{padding:"2px 12px"}}>
@@ -61,7 +68,12 @@ function Navbar() {
                  {subnavlinks.map(navlink =>
                  <a style={{textDecoration:"none",color:"white"}} href={`/${navlink.url}`}><p >{navlink.name}</p></a>
                     )}
-                
+                 <center className="navdiv_smbtm" style={{fontWeight:"bold",marginBottom:"3px"}}>
+                        <small style={{fontSize:"12px"}}><span style={{fontSize:"18px"}} className='fa fa-globe' ></span> | Support | Documentation | Login</small><br/>
+                      <button style={{backgroundColor:"indianred",fontWeight:"bold",fontSize:"17px",border:"none",margin:"0px",borderRadius:"20px",color:"white",padding:"10px 15px"}}>
+                        <small>SIGN UP FOR FREE</small>
+                      </button>
+                      </center>
              </div>
             </div>
         </div>
