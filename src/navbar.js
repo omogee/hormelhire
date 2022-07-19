@@ -5,7 +5,7 @@ import "./s.css"
 
 function Navbar() {
     const [display, changedisplay] = useState("none")
-    const [navlinks, setnavlinks] = useState([{url:"",name:"home"},{url:"about us",name: "about us"},{url:"profile",name: "profile"},{url:"contacts",name:"contact"},
+    const [navlinks, setnavlinks] = useState([{url:"",name:"home"},{url:"#about",name: "about us"},{url:"profile",name: "profile"},{url:"contacts",name:"contact"},
     {url:"services",name:"services"}])
     const [subnavlinks, setsubnavlinks] = useState([{url:"",name:"home"},{url:"services",name: "our services"},{url:"contacts",name:"contact us"},
     {url:"why hormel",name:"why hormel"}, {url:"about",name:"About us"},{url:"profile",name:"my profile"},{url:"meet Our Team",name:"Meet Our team"},{url:"hire",name:"Hire labour"},
@@ -59,20 +59,22 @@ function Navbar() {
             <div className='navbrand_sm' style={{float:"left"}}>
                       <img style={{width:"100%"}} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU`} />
                 </div>
-               <div style={{padding:"2px 12px"}}>
+               <div style={{padding:"2px 17px"}}>
                <span onClick={displaynav} className='fa fa-bars' style={{float:"right",color:"grey",border:"2px solid grey",borderRadius:"5px",fontSize:"20px",padding:"5px",color:"grey",cursor:"pointer",transition:"opacity 2s"}}></span>
                </div>
             </div>
             <div className='navdiv_sm' ref={navref}>
              <div style={{padding:"20px"}}>
                  {subnavlinks.map(navlink =>
-                 <a style={{textDecoration:"none",color:"white"}} href={`/${navlink.url}`}><p >{navlink.name}</p></a>
+                 <a style={{textDecoration:"none",color:"white"}} href={`/${navlink.url}`}><p>{navlink.name}</p></a>
                     )}
                  <center className="navdiv_smbtm" style={{fontWeight:"bold",marginBottom:"3px"}}>
-                        <small style={{fontSize:"12px"}}><span style={{fontSize:"18px"}} className='fa fa-globe' ></span> | Support | Documentation | Login</small><br/>
+                        <small style={{fontSize:"12px"}}><span style={{fontSize:"18px"}} className='fa fa-globe' ></span> | Support | Documentation | <a href="/login"  style={{color:"white",textDecoration:"none"}}>Login</a></small><br/>
+                        <a href="/register" >
                       <button style={{backgroundColor:"indianred",fontWeight:"bold",fontSize:"17px",border:"none",margin:"0px",borderRadius:"20px",color:"white",padding:"10px 15px"}}>
                         <small>SIGN UP FOR FREE</small>
                       </button>
+                      </a>
                       </center>
              </div>
             </div>

@@ -95,7 +95,7 @@ function Register() {
                }
             </div>
           </div>
-           <div style={{position:"absolute",top:"100px",width:"100%",left:"0px"}}>
+           <div className="registerinnerdiv" style={{position:"absolute",width:"100%",left:"0px"}}>
            <div style={{display:"flex"}}>
             <div className='registerdummydiv'> </div>
             <div className='registerdiv'>
@@ -103,7 +103,7 @@ function Register() {
                 
                <div style={{padding:"10px 25px",marginBottom:"10px"}}>
                   <div style={{textAlign:'center'}}>
-                  <img className='imgpreview' style={{width:"50%",height:"200px",padding:"20px",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF514mmQNz2OYCDUq8pIA2tRxg4lOzrn-yXA&usqp=CAU"} />
+                  <img className='imgpreview' style={{width:"50%",height:"150px",padding:"20px",borderRadius:"50%",boxShadow:"2px 2px 5px 3px lightgrey"}} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zx5CiaYnCwoh0qV78HkqFAAu6bJ9iH0VGC6w8i5kxHF7-h_K1_LuFVj6WHGYUEND5vQ&usqp=CAU"} />
                   </div>
                <span style={{color:"grey", fontWeight:"bold"}}><span style={{color:"indianred",fontSize:"20px"}}> * </span>Upload Portrait/Passport :</span>
                <input type="file" name="files" onChange={photochange} style={{width:"100%",padding:"10px",borderRadius:"20px",border:"1px solid lightgrey"}} /><br/><br/>

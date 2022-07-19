@@ -6,8 +6,8 @@
 .sectOne_divmainTwo{height:100vh;width:40%;background-size:contain;background-repeat:no-repeat;background-position:center;background-image:url('https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png')}
 .outer{ position:relative; display: inline-block;font-size: 5px;}
 .inner{ position: absolute; top:0px;overflow: hidden;}
-.outer::before { content: "★★★★★"; font-family: 'Font Awesome 5 Free'; color: lightgrey; font-weight:500; font-size: 35px;}
-.inner::before {content: "★★★★★"; font-family: 'Font Awesome 5 Free'; font-size: 35px; color:orange;font-weight: 500;}
+.outer::before { content: "★★★★★"; font-family: 'Font Awesome 5 Free'; color: lightgrey; font-weight:500; font-size: 20px;}
+.inner::before {content: "★★★★★"; font-family: 'Font Awesome 5 Free'; font-size: 20px; color:orange;font-weight: 500;}
 .sectOne_div{padding:30px;margin-top: 20vh}
 .sectOne_textheader{font-size:50px;color:white}
 .sectOne_text{color:grey;text-transform: capitalize;font-size: 22px;}
@@ -16,7 +16,7 @@
 .chatbtn{width:40%}
 .sectOne_btn{background-color: blue;font-weight: bolder;border-radius: 15px;width:100%;padding:25px;color:white;font-size: 17px;text-transform: uppercase;border: none;}
 .sectOne_btn2{background-color: indianred;font-weight: bolder;border-radius: 10px;width:100%;padding:25px;color:white;font-size: 17px;text-transform: uppercase;border: none;}
-.reviewdiv_maindiv{width:80%;top:160vh;background-color:white;box-shadow:2px 2px 3px 3px lightgrey;position:absolute;z-index:10;left:10%;}
+.reviewdiv_maindiv{width:100%;background-color:white;box-shadow:2px 2px 3px 3px lightgrey;}
 .reviewdiv_header{font-weight: bolder;padding:20px;text-align: center;color:rgb(0, 34, 102)}
 .reviewdiv_One{width:20%;padding:0;text-align:center;margin:0}
 .about_header{color:orange;font-weight:bolder;font-size:20px;text-transform: capitalize;}
@@ -30,12 +30,19 @@
 .sectFour_basediv_2{width:20%}
 .section2_maindiv{background-color:rgba(242,242,242);padding:30px}
 .sectFive_div{width:45%;margin-top:50px;padding:10px}
-.sectFive_maindiv{display:flex;flex-wrap:wrap;background-color: white;justify-content:center;padding:30px}
-.sectFive_divcenter{width:30%}
+.sectFive_maindiv{display:flex;flex-wrap:wrap;background-color: white;justify-content:center;padding:0px}
+.sectFive_divcenter{width:30%;text-align: center;}
 
-.sectFive_divOne{width:100%;padding:5px;border-radius:10px;background-color:white;margin-top:20vh}
-.sectFive_divTwo{width:100%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;}
+.sectFive_divOne{text-align: center;height:100%;width:30%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:20vh}
+.sectFive_divTwo{text-align: center;height:100%;width:30%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;}
 .sectSix_div{width:43%;margin-top:50px;padding:40px}
+
+.section7_div{width:30%;text-align:center;padding:50px}
+.footer_div{width:15%;padding:20px;font-size:14px;color:lightgrey}
+.footer2_1{padding:10px;width:40%}
+.footer2_2{padding:10px;width:10}
+.footer2_3{padding:10px;width:15%}
+.footer2_4{padding:10px;width:20%}
 
 .logindummydiv{width:30%;}
 .logindiv{width:40%;padding:0;margin-top:100px;padding:20px}
@@ -46,6 +53,8 @@
 .registerdiv{width:40%;overflow:scroll;border-radius:20px;border:5px solid indianred;background-color:rgba(252,252,252)}
 .registerbox{box-shadow: 6px 2px 8px 4px lightgrey;width:100%;padding:0;margin:0}
 .registerbg{background-color:indianred;}
+.registerinnerdiv{top:100px}
+
 .div_sm{display:none}
 .div_lg{display:block}
 @media all and (max-width:1200px){
@@ -69,9 +78,9 @@
   .div_lg{display:none}
   .sectOne_maindiv{height:290vh;}
   .sectOne_div{padding:10px;margin-top: 20vh}
-  .reviewdiv_maindiv{width:100%;box-shadow:none;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+  .reviewdiv_maindiv{width:100%;box-shadow:none;background-color:white;z-index:10;left:0px;}
  
-  .section2_maindiv{background-color:rgba(242,242,242);padding:10px;}
+  .section2_maindiv{background-color:rgba(242,242,242);padding:0px;margin:0}
   .sectOne_divmainOne{width:80%}
   .sectOne_btndiv{padding:0px;margin-left: 0px;}
   .sectOne_divmainTwo{height:100vh;width:100%;background-size:contain;background-repeat:no-repeat;background-position:right top;background-image:url('https://assets-global.website-files.com/601cea0056c5710021a1f03c/6170fa842a6fc066e96eb303_globe%20solutions-p-800.png')}
@@ -88,13 +97,19 @@
 .aboutOdd_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none}
 .aboutEven_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none;margin-top:20px}
 .sectFive_div{width:100%;margin-top:50px;padding:10px}
-.sectFive_maindiv{display:flex;flex-wrap:wrap;justify-content:center;padding:0px}
+.sectFive_maindiv{display:flex;justify-content:center;padding:0px;margin:0px}
 .sectFive_divcenter{width:100%}
-.sectFive_divOne{width:80%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
-.sectFive_divTwo{width:80%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
+.sectFive_divOne{text-align: center;width:45%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
+.sectFive_divTwo{text-align: center;width:45%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
 
 .sectSix_div{width:100%;margin-top:10px;padding:0px}
-
+.section7_div{width:100%;text-align:center;}
+.footer_div{width:40%;padding:20px;font-size:14px;color:lightgrey}
+.footer2_1{width:80%}
+.footer2_2{width:50}
+.footer2_3{width:50%}
+.footer2_4{width:100%}
+.registerinnerdiv{top:80px}
 .logindummydiv{display: none;}
 .logindiv{width:100%;padding:0;margin-top:100px;padding:20px}
 .loginbox{box-shadow: none;width:100%;padding:0;margin:0}
@@ -108,7 +123,7 @@
 @media all and (max-width:468px){
   .sectOne_maindiv{height:290vh;}
   .sectOne_div{padding:10px;margin-top: 20vh}
-  .reviewdiv_maindiv{width:100%;top:240vh;background-color:white;position:absolute;z-index:10;left:0px;}
+  .reviewdiv_maindiv{width:100%;background-color:white;z-index:10;left:0px;}
   .section2_maindiv{background-color:rgba(242,242,242);padding:10px;}
   .sectOne_divmainOne{width:80%}
   .sectOne_btndiv{padding:0px;margin-left: 0px;}
@@ -127,14 +142,22 @@
 .aboutEven_div{width:100%;height:100%;border-radius:10px;padding:10px;background-color:white;box-shadow:none;margin-top:20px}
 .sectFive_div{width:100%;margin-top:50px;padding:10px}
 .sectFive_maindiv{display:flex;flex-wrap:wrap;justify-content:center;padding:0px}
-.sectFive_divcenter{width:100%}
-.sectFive_divOne{width:100%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
- .sectFive_divTwo{width:100%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
+.sectFive_divOne{text-align: center;width:45%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
+.sectFive_divTwo{text-align: center;width:45%;padding:5px;box-shadow:2px 2px 5px 3px lightgrey;border-radius:10px;background-color:white;margin-top:5vh}
 .sectSix_div{width:100%;margin-top:10px;padding:0px}
+.section7_div{width:100%;text-align:center;}
+
+.footer_div{width:40%;padding:20px;font-size:14px;color:lightgrey}
+.footer2_1{width:80%}
+.footer2_2{width:50}
+.footer2_3{width:50%}
+.footer2_4{width:100%}
+.registerinnerdiv{top:80px}
 
 .logindummydiv{display: none;}
 .logindiv{width:100%;padding:0;margin-top:100px;padding:20px}
 .loginbox{box-shadow: none;width:100%;padding:0;margin:0}
+
 
 .registerdummydiv{display: none;}
 .registerdiv{width:100%;height:85vh;overflow:scroll;border:none;background-color:rgba(252,252,252);margin-top:20px;padding:20px}
